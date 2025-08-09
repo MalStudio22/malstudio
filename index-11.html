@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ms" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography & Videography — Elegant White & Gold</title>
+  <meta name="description" content="Perkhidmatan Photography & Videography untuk majlis perkahwinan. Liputan Kedah, Perak, Penang, Perlis.">
+  <meta property="og:title" content="Photography & Videography — White & Gold">
+  <meta property="og:description" content="Pakej Photography & Videography serba eksklusif. Tempah sekarang melalui WhatsApp.">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    /* ========== Foundations ========== */
+    :root{
+      --bg:#ffffff;
+      --text:#121212;
+      --muted:#6b6b6b;
+      --line:#ececec;
+      --gold:#c7a64b;
+      --gold-hi:#e3cf86;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji';}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .sp-1{height:14px}.sp-2{height:28px}.sp-3{height:40px}.sp-4{height:64px}
+    /* ========== Header ========== */
+    .nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    .nav-w{display:flex;align-items:center;justify-content:space-between;height:60px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
+    .dot{width:14px;height:14px;border-radius:50%;background:conic-gradient(from 140deg, var(--gold), var(--gold-hi));box-shadow:0 0 0 1px rgba(199,166,75,.4)}
+    .cta-mini{display:none}
+    @media (min-width:740px){ .cta-mini{display:block} }
+    /* ========== Hero ========== */
+    .hero{padding:72px 0 32px;text-align:center}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,rgba(199,166,75,.18),rgba(231,216,160,.28));border:1px solid rgba(199,166,75,.35);padding:6px 12px;border-radius:999px;color:#7a6b31;font-weight:700;font-size:13px}
+    .headline{font-size:clamp(34px,6vw,64px);font-weight:800;letter-spacing:-.02em;margin:14px auto 10px;line-height:1.04}
+    .hl-underline{background:linear-gradient(90deg,transparent 0%, rgba(231,216,160,.6) 40%, rgba(199,166,75,.6) 60%, transparent 100%);height:10px;border-radius:999px;margin:8px auto 0;max-width:420px}
+    .subcopy{color:var(--muted);max-width:720px;margin:10px auto 0;font-size:18px}
+    /* Segmented control */
+    .seg{display:inline-flex;gap:4px;background:#f6f6f6;border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:20px}
+    .seg button{appearance:none;border:0;background:transparent;padding:10px 16px;border-radius:999px;font-weight:700;cursor:pointer;transition:transform .2s;min-width:150px}
+    .seg button[aria-pressed='true']{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .seg button:active{transform:translateY(1px)}
+    /* ========== Sections ========== */
+    .notice{background:#fff7de;border:1px solid rgba(199,166,75,.35);border-radius:12px;padding:12px 14px;color:#6a5620;margin:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:transform .25s, box-shadow .25s}
+    .card:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,0,0,.08)}
+    @media (min-width:820px){ .card.span-4{grid-column:span 4} }
+    .pkg{text-transform:uppercase;letter-spacing:.12em;color:#7f7f7f;font-size:12px;font-weight:800}
+    .price{font-size:42px;font-weight:900;letter-spacing:-.015em;margin:6px 0 2px;color:#3d3d3d}
+    .list{margin:12px 0 0;padding-left:20px;color:#343434}
+    .list li{margin:8px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border-radius:12px;font-weight:800;min-width:220px;border:1px solid rgba(199,166,75,.55);background:linear-gradient(180deg,#fff,#fff) padding-box, linear-gradient(90deg, var(--gold), var(--gold-hi)) border-box;box-shadow:var(--shadow)}
+    .btn span.icon{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #fff, #fff0 40%), conic-gradient(from 120deg, var(--gold), var(--gold-hi));flex:none}
+    /* Sticky bar */
+    .sticky-cta{position:sticky;bottom:0;z-index:30;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(14px);border-top:1px solid var(--line)}
+    .sticky-cta .wrap{display:flex;gap:12px;align-items:center;justify-content:center;padding:12px 16px;flex-wrap:wrap}
+    .whats{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--gold-hi));color:#fff;font-weight:900;box-shadow:0 10px 24px rgba(199,166,75,.45)}
+    
+    /* Portfolio thumbnails */
+    .thumb{ grid-column: span 6; position:relative; overflow:hidden; border-radius:14px; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow); }
+    .thumb img{ width:100%; height:100%; object-fit:cover; display:block; aspect-ratio:1/1; }
+    .thumb .overlay{ position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:space-between; padding:10px; background:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.35)); color:#fff; font-size:12px; opacity:0; transition:opacity .2s; }
+    .thumb:hover .overlay{ opacity:1; }
+    @media (min-width:820px){ .thumb{ grid-column: span 4; } }
+
+    /* Footer */
+    footer{text-align:center;color:var(--muted);padding:40px 0}
+    /* Motion respect */
+    @media (prefers-reduced-motion: reduce){ .card{transition:none} .seg button{transition:none} }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-w">
+      <div class="logo"><span class="dot" aria-hidden="true"></span><span>MalStudio</span></div>
+      <a class="cta-mini btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20dengan%20servis%20anda.">💬 WhatsApp</a>
+    </div>
+  </nav>
+
+  <header class="hero container" id="top">
+    <span class="eyebrow">PHOTOGRAPHY &amp; VIDEOGRAPHY SERVICE</span>
+    <h1 class="headline">Kenangan Terindah,<br>Disaji Dengan Sentuhan <span style="color:#7d6a29">Gold</span>.</h1>
+    <div class="hl-underline" aria-hidden="true"></div>
+    <p class="subcopy">Kualiti setaraf jenama premium — rekaan minimal, fokus pada emosi dan momen. Liputan <b>Kedah</b>, <b>Perak</b>, <b>Penang</b>, <b>Perlis</b>.</p>
+
+    <div class="seg" role="tablist" aria-label="Pilih kategori">
+      <button id="seg-photo" role="tab" aria-pressed="true" aria-controls="photo">Photography</button>
+      <button id="seg-video" role="tab" aria-pressed="false" aria-controls="video">Videography</button>
+          <button id="seg-port" role="tab" aria-pressed="false" aria-controls="port">Portfolio</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="photo" aria-labelledby="seg-photo">
+      <h2 style="font-size:24px;display:flex;align-items:center;gap:10px;">📸 Photography Packages</h2>
+      <div class="notice">Semua harga tidak termasuk <b>caj pengangkutan</b> dan <b>album fizikal</b>. Deposit <b>50%</b> daripada harga pakej.</div>
+      <div class="grid">
+        <article class="card span-4">
+          <div class="pkg">Akad Nikah</div>
+          <div class="price">RM350</div>
+          <ul class="list">
+            <li>Unlimited photo (siap edit)</li>
+            <li>Softcopy</li>
+            <li>2–3 jam coverage</li>
+            <li>Highlight moment</li>
+          </ul>
+          <div class="sp-2"></div>
+          <a class="btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20Pakej%20Photography%20Akad%20Nikah%20(RM350)."><span class="icon"></span><span>Tempah via WhatsApp</span></a>
+        </article>
+
+        <article class="card span-4">
+          <div class="pkg">Sanding / Tandang</div>
+          <div class="price">RM590</div>
+          <ul class="list">
+            <li>Unlimited photo (siap edit)</li>
+            <li>Softcopy</li>
+            <li>4–5 jam coverage</li>
+            <li>Highlight moment</li>
+          </ul>
+          <div class="sp-2"></div>
+          <a class="btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20Pakej%20Photography%20Sanding/Tandang%20(RM590)."><span class="icon"></span><span>Tempah via WhatsApp</span></a>
+        </article>
+
+        <article class="card span-4">
+          <div class="pkg">Outdoor Sessions</div>
+          <div class="price">RM250</div>
+          <ul class="list">
+            <li>Unlimited photo (siap edit)</li>
+            <li>Softcopy</li>
+            <li>2–3 jam coverage</li>
+            <li>Boleh pilih lokasi</li>
+            <li>Highlight moment</li>
+          </ul>
+          <div class="sp-2"></div>
+          <a class="btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20Pakej%20Photography%20Outdoor%20(RM250)."><span class="icon"></span><span>Tempah via WhatsApp</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" aria-labelledby="seg-video" hidden>
+      <h2 style="font-size:24px;display:flex;align-items:center;gap:10px;">🎥 Videography Packages</h2>
+      <div class="notice">Videography — harga tidak termasuk caj pengangkutan. Deposit <b>50%</b> daripada harga pakej.</div>
+      <div class="grid">
+        <article class="card span-4">
+          <div class="pkg">Akad Nikah (Video)</div>
+          <div class="price">RM450</div>
+          <ul class="list">
+            <li>Rakaman HD</li>
+            <li>Video highlight disunting</li>
+            <li>Softcopy</li>
+            <li>2–3 jam coverage</li>
+          </ul>
+          <div class="sp-2"></div>
+          <a class="btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20Pakej%20Videography%20Akad%20Nikah%20(RM450)."><span class="icon"></span><span>Tempah via WhatsApp</span></a>
+        </article>
+
+        <article class="card span-4">
+          <div class="pkg">Sanding (Video)</div>
+          <div class="price">RM650</div>
+          <ul class="list">
+            <li>Rakaman HD</li>
+            <li>Video highlight disunting</li>
+            <li>Softcopy</li>
+            <li>4–5 jam coverage</li>
+          </ul>
+          <div class="sp-2"></div>
+          <a class="btn" href="https://wa.me/60142745448?text=Hai!%20Saya%20berminat%20Pakej%20Videography%20Sanding%20(RM650)."><span class="icon"></span><span>Tempah via WhatsApp</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="sp-3"></div>
+
+  <section id="port" aria-labelledby="seg-port" hidden class="container">
+    <div class="notice">Portfolio — dimuat dari Google Drive untuk paparan ringan dan kemas kini pantas.</div>
+    <div style="border:1px solid #ececec;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06)">
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1O62BFyMSkxxk41iIdVY0sGdXqrOB24oD#grid" style="width:100%; height:70vh; border:0;"></iframe>
+    </div>
+  </section>
+
+  <section class="sticky-cta">
+    <div class="wrap container">
+      <span style="font-weight:700;color:#6b6b6b">Ada soalan pantas?</span>
+      <a class="whats" href="https://wa.me/60142745448?text=Hai!%20Saya%20nak%20tanya%20tentang%20pakej.">WhatsApp 014‑274‑5448</a>
+    </div>
+  </section>
+
+  <footer class="container">
+    © 2025 MalStudio. Direka dengan minimalisme premium.
+  </footer>
+
+  <script>
+    // Segmented switch
+    const segPhoto = document.getElementById('seg-photo');
+    const segVideo = document.getElementById('seg-video');
+    const panelPhoto = document.getElementById('photo');
+    const panelVideo = document.getElementById('video');
+    const segPort = document.getElementById('seg-port');
+    const panelPort = document.getElementById('port');
+    function activate(which){
+      const photo = which === 'photo';
+      const video = which === 'video';
+      const port  = which === 'port';
+      segPhoto.setAttribute('aria-pressed', photo);
+      segVideo.setAttribute('aria-pressed', video);
+      segPort.setAttribute('aria-pressed', port);
+      panelPhoto.hidden = !photo;
+      panelVideo.hidden = !video;
+      panelPort.hidden  = !port;
+      window.scrollTo({ top: document.querySelector('main').offsetTop-10, behavior:'smooth' });
+      if(port){ renderPortfolio(); }
+    }
+    segPhoto.addEventListener('click', ()=>activate('photo'));
+    segVideo.addEventListener('click', ()=>activate('video'));
+    segPort.addEventListener('click', ()=>activate('port'));
+
+    // ===== Portfolio Loader =====
+    // Guna pautan Google Drive berbentuk terus (direct).
+    // CARA: Dapatkan FILE_ID dari link 'https://drive.google.com/file/d/FILE_ID/view?usp=sharing'
+    // Kemudian jadikan URL imej terus: 'https://drive.google.com/uc?export=view&id=FILE_ID'
+    const portfolioImages = [
+      // Contoh:
+      // { src: 'https://drive.google.com/uc?export=view&id=FILE_ID_1', caption: 'Akad Nikah' },
+      // { src: 'https://drive.google.com/uc?export=view&id=FILE_ID_2', caption: 'Sanding' },
+    ];
+
+    const grid = document.getElementById('portfolio-grid');
+    function renderPortfolio(){
+      grid.innerHTML = '';
+      portfolioImages.forEach((item, idx) => {
+        const card = document.createElement('figure');
+        card.className = 'thumb';
+        const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.src = item.src;
+        img.alt = item.caption || ('Portfolio ' + (idx+1));
+        img.addEventListener('click', () => openLightbox(item.src));
+        const overlay = document.createElement('figcaption');
+        overlay.className = 'overlay';
+        overlay.innerHTML = `<span>${item.caption || ''}</span><span style="font-weight:800">Perbesar</span>`;
+        card.appendChild(img);
+        card.appendChild(overlay);
+        grid.appendChild(card);
+      });
+    }
+    function openLightbox(src){
+      const dlg = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      if(typeof dlg.showModal === 'function'){ dlg.showModal(); }
+      dlg.addEventListener('click', (e)=>{ if(e.target === dlg) dlg.close(); }, { once:true });
+    }
+
+  </script>
+</body>
+</html>
